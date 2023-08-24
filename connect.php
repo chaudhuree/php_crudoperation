@@ -1,9 +1,9 @@
 <?php
 
-$con = new mysqli("localhost","root","","crudoperation");
+$con = new mysqli("localhost", "root", "root", "crudoperation");
 
-if($con){
+if ($con) {
     echo "connected";
-}else{
+} else {
     die(mysqli_error($con));
 }
