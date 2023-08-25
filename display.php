@@ -16,7 +16,7 @@ include "connect.php";
 <div class="container">
     <button class="btn btn-primary m-5"><a href="user.php" class="text-light text-decoration-none">Add user</a></button>
     <div class="row">
-        <div class="col-md-6 offset-md-3">
+        <div class="col-md-8 offset-md-2">
             <table class="table">
                 <thead>
                 <tr>
@@ -41,10 +41,10 @@ include "connect.php";
                             <td><?php echo $row['email']?></td>
                             <td><?php echo $row['mobile']?></td>
                             <td><?php echo $row['password']?></td>
-<!--                            <td>-->
-<!--                                <button class="btn btn-primary"><a href="update.php?id=--><?php //echo $row['id']?><!--" class="text-light text-decoration-none">Update</a></button>-->
-<!--                                <button class="btn btn-danger"><a href="delete.php?id=--><?php //echo $row['id']?><!--" class="text-light text-decoration-none">Delete</a></button>-->
-<!--                            </td>-->
+                            <td>
+                                <button class="btn btn-primary btn-sm mb-1"><a href="update.php?id=<?php echo $row['id']?>" class="text-light text-decoration-none">Update</a></button>
+                                <button class="btn btn-sm btn-danger"><a href="delete.php?id=<?php echo $row['id']?>" class="text-light text-decoration-none">Delete</a></button>
+                            </td>
                         </tr>
                         <?php
                     }
